@@ -532,10 +532,15 @@ h3::before {
   .prices {
     background: #fff;
   }
+  .prices {
+    color: #2c2e37;
+  }
 }
+
 .prices h3 {
   color: #fff;
 }
+
 .prices .price {
   box-sizing: border-box;
   height: 62px;
