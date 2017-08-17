@@ -523,9 +523,6 @@ h3::before {
   padding-bottom: 200px;
   text-align: center;
 }
-.prices h3 {
-  color: #fff;
-}
 @media (max-width: 990px) {
   .prices {
     padding-bottom: 200px;
@@ -534,9 +531,6 @@ h3::before {
 @media (max-width: 620px) {
   .prices {
     background: #fff;
-  }
-  .prices {
-    color: #2c2e37;
   }
 }
 
