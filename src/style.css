@@ -1,6 +1,6 @@
 html,
 body {
-  width: 100%;
+  max-width: 100%;
   height: 100%;
 }
 body {
@@ -63,9 +63,15 @@ h3::before {
   box-sizing: border-box;
 }
 .home .header {
-  height: 90px;
+  min-height: 90px;
   background-color: rgba(255, 255, 255, 0.2);
   margin-bottom: 170px;
+}
+@media (max-width: 690px) {
+  .home .header {
+    text-align: center;
+    padding-bottom: 20px;
+  }
 }
 .home .header::before {
   content: '';
@@ -136,7 +142,7 @@ h3::before {
   border: 3px solid #36aeea;
   border-radius: 5px;
   height: 44px;
-  line-height: 44px;
+  line-height: 41px;
   min-width: 150px;
   padding: 0 34px;
   position: absolute;
@@ -148,7 +154,7 @@ h3::before {
   color: #0f6691;
   border-color: #0f6691;
 }
-@media (max-width: 844px) {
+@media (max-width: 804px) {
   .home .header .call {
     position: initial;
     border-color: #1276a8;
@@ -156,6 +162,7 @@ h3::before {
     display: block;
     width: 152px;
     margin-top: 10px;
+    margin: auto;
   }
 }
 .home .content-wrapper.text {
@@ -331,10 +338,11 @@ h3::before {
   text-align: center;
   padding: 48px 30px;
 }
-@media (max-width: 700px) {
+@media (max-width: 400px) {
   .journal .grids .grid {
     margin-right: 0;
-    width: 100%;
+    max-width: 320px;
+    max-height: auto;
   }
 }
 .journal .grids .grid:nth-child(3),
@@ -420,7 +428,7 @@ h3::before {
 .offer .button {
   box-sizing: border-box;
   border: none;
-  height: 60px;
+  height: 61px;
   width: 222px;
   background-color: #36aeea;
   color: #fff;
@@ -438,6 +446,7 @@ h3::before {
     margin-left: 0;
     display: block;
     margin-top: 34px;
+    width: 300px;
   }
 }
 .offer .lock {
@@ -533,7 +542,6 @@ h3::before {
     background: #fff;
   }
 }
-
 .prices .price {
   box-sizing: border-box;
   height: 62px;
@@ -845,12 +853,16 @@ h3::before {
   line-height: 83px;
   text-align: center;
   position: relative;
+  overflow-y: hidden;
 }
 @media (max-width: 500px) {
   .footer {
     line-height: normal;
     padding: 30px 0;
   }
+}
+.footer .phone {
+  color: #78a8b8;
 }
 .footer .lisence {
   font-size: 16px;
